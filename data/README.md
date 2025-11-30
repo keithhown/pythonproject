@@ -1,11 +1,37 @@
 # Anatomy of a Blockbuster: Exploratory Analysis of Movies
-This project takes a closer look at the world of cinema through the lens of data. By analyzing a comprehensive dataset of movies, it investigates how financial performance, audience ratings, and other factors shape the landscape of the film industry.
-Key aspects of the analysis include:
-- **Distributions**: Examining the spread of budgets, revenues, profits, and ROI to understand common patterns and outliers.  
-- **Trends over time**: Observing how the number of movies, average budgets, revenues, and audience ratings evolved year by year.  
-- **Genres**: Identifying which genres dominate in terms of production volume and financial performance.  
-- **Runtime categories**: Comparing average profit and ROI across different movie lengths.  
-- **Correlation analysis**: Exploring relationships between key numerical variables to uncover potential insights.
+This project explores the factors that contribute to a movie’s success using a comprehensive dataset of films. 
+By analyzing budget, revenue, profit, genres, and audience ratings, we investigate trends, outliers, and the dynamics of blockbuster cinema. 
+The analysis includes temporal trends, genre comparisons, and a final “blockbuster success map.”  
+The main goal of this project is to understand the economic and creative patterns that determine a movie’s financial and critical success. 
+Key questions include:  
+- How do budgets, revenues, and profits evolve over time?  
+- Which genres are the most profitable and most produced?  
+- What is the relationship between budget, revenue, and audience ratings?  
+- How do blockbusters differ from average films in terms of revenue, budget, and ROI?  
 
-The dataset is loaded and preprocessed using `load_and_clean_data.py`, ensuring clean and reliable data for the visualizations created with Matplotlib and Seaborn.
-All dependencies are listed in `requirements.txt`.
+the analysis uses **The Movies Dataset** from Kaggle, which contains:  
+- Movie metadata (titles, release dates, genres, runtimes...)    
+- audience ratings  
+> dataset source: [The Movies Dataset on Kaggle](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset)  
+the dataset is loaded and preprocessed using `load_and_clean_data.py`, ensuring clean and reliable data for the visualizations created with Matplotlib and Seaborn.
+all dependencies are listed in `requirements.txt`.
+
+
+project structure  
+anatomy_of_blockbuster/
+│
+├── data/                       #raw CSV dataset
+│   └── movies_metadata.csv
+│
+├── src/                        #custom python scripts
+│   └── load_and_clean_data.py  #function to load and clean dataset
+│
+├── notebooks/                  #jupyter notebooks
+│   └── blockbuster_analysis.ipynb
+|   └── images                  #images used in the notebook
+│
+├── outputs/                    #generated plots and figures
+│
+├── requirements.txt            #python libraries
+└── README.md                   #project documentation
+
