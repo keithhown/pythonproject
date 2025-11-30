@@ -1,0 +1,12 @@
+#created by venv; see https://docs.python.org/3/library/venv.html
+#python virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+#jupyter checkpoints
+.ipynb_checkpoints/
+#data files
+*.csv
+*.xlsx
